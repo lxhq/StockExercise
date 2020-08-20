@@ -1,4 +1,4 @@
-package com.stock.exerice.model.stock;
+package com.stock.exercise.model.stock;
 
 public interface StockFactory {
     public Stock create(String stockSymbol);

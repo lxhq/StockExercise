@@ -1,4 +1,4 @@
-package com.stock.exerice;
+package com.stock.exercise;
 
 import static org.junit.Assert.assertTrue;
 

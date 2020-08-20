@@ -1,7 +1,4 @@
-package com.stock.exerice.model.stock;
-
-import com.google.inject.Inject;
-import com.stock.exerice.model.manager.StockManager;
+package com.stock.exercise.model.stock;
 
 import java.time.LocalDate;
 import java.util.List;

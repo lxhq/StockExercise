@@ -1,6 +1,6 @@
-package com.stock.exerice;
+package com.stock.exercise;
 
-import com.stock.exerice.model.stock.Stock;
+import com.stock.exercise.model.stock.Stock;
 
 import java.time.LocalDate;
 import java.util.List;

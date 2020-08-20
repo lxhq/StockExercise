@@ -1,4 +1,4 @@
-package com.stock.exerice.model.manager;
+package com.stock.exercise.model.manager;
 
 import com.google.inject.Singleton;
 

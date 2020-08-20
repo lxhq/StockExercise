@@ -1,12 +1,12 @@
-package com.stock.exerice.model;
+package com.stock.exercise.model;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
-import com.stock.exerice.model.manager.StockManager;
-import com.stock.exerice.model.manager.StockManagerImpl;
-import com.stock.exerice.model.stock.Stock;
-import com.stock.exerice.model.stock.StockFactory;
-import com.stock.exerice.model.stock.StockImpl;
+import com.stock.exercise.model.manager.StockManager;
+import com.stock.exercise.model.manager.StockManagerImpl;
+import com.stock.exercise.model.stock.Stock;
+import com.stock.exercise.model.stock.StockFactory;
+import com.stock.exercise.model.stock.StockImpl;
 
 public class StockModule extends AbstractModule {
     @Override

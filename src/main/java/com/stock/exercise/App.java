@@ -1,18 +1,15 @@
-package com.stock.exerice;
+package com.stock.exercise;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.stock.exerice.model.StockModule;
-import com.stock.exerice.model.manager.StockManagerImpl;
-import com.stock.exerice.model.stock.Stock;
-import com.stock.exerice.model.stock.StockFactory;
-import com.stock.exerice.model.stock.StockImpl;
+import com.stock.exercise.model.StockModule;
+import com.stock.exercise.model.stock.Stock;
+import com.stock.exercise.model.stock.StockFactory;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class App 
 {
