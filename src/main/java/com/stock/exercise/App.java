@@ -75,7 +75,7 @@ public class App
         System.out.println();
 
         //All stocks with a value larger than the threshold
-        System.out.println("All stocks with a value larger than the threshold");
+        System.out.println("All stocks with a value larger than the 20000");
         Functions.getCurrentHoldStockValueLargerThan(list, 20000, localDate)
                 .stream()
                 .map(fValue)
@@ -83,7 +83,7 @@ public class App
         System.out.println();
 
         //All stocks that bought before a time
-        System.out.println("All stocks that bought before a time");
+        System.out.println("All stocks that bought before a time (2017-1-1)");
         Functions.getStocksBoughtBefore(list, LocalDate.of(2017, 1,1))
                 .stream()
                 .map(a -> a.getSymbol())
@@ -99,12 +99,12 @@ public class App
         System.out.println();
 
         //All unprofitable stocks
-        System.out.println("All unprofitable stocks");
-        Functions.getUnprofitableStocks(list, localDate)
-                .stream()
-                .map(a -> a.getSymbol() + " lose " + (a.getCost(localDate) - a.getValue(localDate)) + " dollar")
-                .forEach(System.out::println);
-        System.out.println();
+//        System.out.println("All unprofitable stocks");
+//        Functions.getUnprofitableStocks(list, localDate)
+//                .stream()
+//                .map(a -> a.getSymbol() + " lose " + (a.getCost(localDate) - a.getValue(localDate)) + " dollar")
+//                .forEach(System.out::println);
+//        System.out.println();
     }
 
     private static void buyStocks(List<Stock> list) {

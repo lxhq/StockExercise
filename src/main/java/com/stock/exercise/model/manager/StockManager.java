@@ -4,20 +4,20 @@ import java.time.LocalDate;
 
 public interface StockManager {
     /**
-     * Test if the stockSymbol is cached in memory. If not, fetch it from Internet by API.
+     * Return true if the stockSymbol is cached in memory
      * @param stockSymbol Stock ticker, we want to check
      * @return True for in memory. False for not
      */
     boolean isCached(String stockSymbol);
 
     /**
-     * Refresh the stockValues
+     * Fetch Stock prices for the given ticker from the Internet and cache them into a local file
      * @param stockSymbol the stock ticker
      */
     void refresh(String stockSymbol);
 
     /**
-     * Returns the stock value with given {@code tickerSymbol} and {@code date}.
+     * Return the stock price with the given ticker and date.
      *
      * @param date the given date to get stock value
      * @return the stock value with given parameters

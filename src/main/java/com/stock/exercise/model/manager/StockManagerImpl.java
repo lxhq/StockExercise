@@ -18,7 +18,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 
 @Singleton
 public class StockManagerImpl implements StockManager{
-    private HashMap<String, String> stockValues;
+    private Map<String, String> stockValues;
 
     public StockManagerImpl() {
         this.stockValues = new HashMap<>();

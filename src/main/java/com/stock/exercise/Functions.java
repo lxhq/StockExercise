@@ -50,7 +50,7 @@ public final class Functions {
     }
 
     /**
-     * Traverse all stocks we have and return all stocks that bought before a time
+     * Traverse all stocks we have and return all stocks that bought before a certain date
      * @param list All stocks we hold
      * @param localDate we want the returned stocks are bought before this time
      * @return A list of stocks that bought before a time
