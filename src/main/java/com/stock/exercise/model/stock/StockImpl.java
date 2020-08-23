@@ -14,7 +14,6 @@ public class StockImpl implements Stock {
     private List<Double> shares;
     private List<LocalDate> dates;
     private List<Double> costs;
-
     private StockManager stockManager;
 
     /**
@@ -103,7 +102,7 @@ public class StockImpl implements Stock {
     }
 
     /**
-     * Gets the stock value at the given date.
+     * This method returns the stock prices at the given date.
      *
      * @param date the given parameter to check the stock value
      * @return the stock value

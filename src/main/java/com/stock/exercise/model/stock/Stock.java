@@ -10,28 +10,28 @@ import java.util.List;
 public interface Stock {
 
     /**
-     * Gets the ticker symbol of the stock.
+     * This method returns the stock ticker
      *
      * @return the symbol of the stock
      */
     String getSymbol();
 
     /**
-     * Gets the shares of each stock.
+     * This method returns all shares for this Stock
      *
      * @return a list of double numbers documenting the shares of each stock
      */
     List<Double> getShare();
 
     /**
-     * Gets the date of buying stocks.
+     * This method returns all dates when each share was bought accordingly
      *
-     * @return a list of date documenting when stocks are bought
+     * @return a list of date documenting when shares are bought accordingly
      */
     List<LocalDate> getDate();
 
     /**
-     * Buy {share} shares stock in {date} date
+     * Buy certain amount of shares{share} in a given date{date}
      *
      * @param share the given number to buy in
      * @param date  the given date to buy in
@@ -39,7 +39,7 @@ public interface Stock {
     void addShare(double share, LocalDate date);
 
     /**
-     * Buy this stock by using certain amount of money at the given date
+     * Buy this stock by using certain amount of money{money} at a given date{date}
      *
      * @param money         the given amount to invest
      * @param date          the given date
@@ -47,7 +47,10 @@ public interface Stock {
     void addAmount(double money, LocalDate date);
 
     /**
-     * Gets the cost of stocks bought before the search date.
+     * This method returns the cost of all shares of this stock bought before a certain date{date}
+     * Traverse all shares bought before the certain date
+     * Then add all shares' costs together to a variable
+     * Return this variable
      *
      * @param date the given searching date
      * @return the cost before the given date
@@ -55,7 +58,10 @@ public interface Stock {
     double getCost(LocalDate date);
 
     /**
-     * Gets the value of all stocks bought.
+     * This method returns the value of all shares of this stock bought before a certain date{date}
+     * Traverse all shares bought before the certain date
+     * Add all shares' value in the certain date together to a variable
+     * Return this variable
      *
      * @param date the given date to refer to
      * @return the value of the stocks bought
