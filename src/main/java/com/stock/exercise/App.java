@@ -15,6 +15,12 @@ public class App
 {
     public static void main( String[] args )
     {
+        //TODO
+        //Execute based on User input
+        //System.in
+        //Scanner
+        //Type input
+
         //injection
         Injector injector = Guice.createInjector(new StockModule());
         StockFactory sf = injector.getInstance(StockFactory.class);
@@ -99,12 +105,12 @@ public class App
         System.out.println();
 
         //All unprofitable stocks
-//        System.out.println("All unprofitable stocks");
-//        Functions.getUnprofitableStocks(list, localDate)
-//                .stream()
-//                .map(a -> a.getSymbol() + " lose " + (a.getCost(localDate) - a.getValue(localDate)) + " dollar")
-//                .forEach(System.out::println);
-//        System.out.println();
+        System.out.println("All unprofitable stocks");
+        Functions.getUnprofitableStocks(list, localDate)
+                .stream()
+                .map(a -> a.getSymbol() + " lose " + (a.getCost(localDate) - a.getValue(localDate)) + " dollar")
+                .forEach(System.out::println);
+        System.out.println();
     }
 
     private static void buyStocks(List<Stock> list) {

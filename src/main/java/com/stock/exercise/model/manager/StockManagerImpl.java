@@ -41,8 +41,9 @@ public class StockManagerImpl implements StockManager{
         if (!stockValues.containsKey(tickerSymbol))
             return "";
         Scanner scanner = new Scanner(stockValues.get(tickerSymbol));
+        //Use Trim
         while (scanner.hasNext()) {
-            String line = scanner.nextLine();
+            String line = scanner.nextLine().trim();
             String[] list = line.split(",");
             String yearMonthDay = list[0];
             if (yearMonthDay.equals(date.toString())) {
